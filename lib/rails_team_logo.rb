@@ -2,10 +2,15 @@ require "rails_team_logo/version"
 
 module RailsTeamLogo
 
-  class Base
+  class Server < ::Rack::Server
 
-    def hello
-      puts 'hello, my first gem'
+    def start
+      super
+
+      puts '='*100
+      puts '='*100
+      puts '='*100
+      puts '='*100
     end
 
   end
