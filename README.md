@@ -17,27 +17,27 @@ Or install it yourself as:
     $ gem install rails_team_logo
 
 ## Usage
-# Create a new yml file in your rails root. He must be 'logo.yml'
-# This is a file there will be stored your team name, our else text which you wanna to out
-# on server start or console start. He must be in Hash structure like:
-#
-#  hash:
-#    key1: 'value'
-#    key2: 'value'
-#
-# Examples:
-# If i want to write just line string use this:
-#  team_name: "Exaple-team"
-#
-# Also, you can write it like "space" string:
-#
-#  hash:
-#    key1: 'line1 /n
-#           line2 /n
-#           line3 /n
-#           line4 /n'
-#
-# But just don't forger for "/n" to newline
+ Create a new yml file in your rails root. He must be 'logo.yml'
+ This is a file there will be stored your team name, our else text which you wanna to out
+ on server start or console start. He must be in Hash structure like:
+
+  hash:
+    key1: 'value'
+    key2: 'value'
+
+ Examples:
+ If i want to write just line string use this:
+  team_name: "Exaple-team"
+
+ Also, you can write it like "space" string:
+
+  hash:
+    key1: 'line1 /n
+           line2 /n
+           line3 /n
+           line4 /n'
+
+But just don't forger for "/n" to newline
 
 params:
   team_name: "  ____________      _________    ____________   \n
