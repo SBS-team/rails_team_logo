@@ -3,12 +3,9 @@ require "yaml"
 
 module RailsTeamLogo
 
-  def get_params
-    return YAML.load_file("logo.yml")
-  end
-
   class MyRailtie < Rails::Railtie
-    params = get_params
+
+    params = YAML.load_file("logo.yml")
     config.after_initialize do
       params.each do |f|
         puts f
