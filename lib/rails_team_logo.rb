@@ -5,15 +5,19 @@ module RailsTeamLogo
 
   class MyRailtie < Rails::Railtie
 
-    params = YAML.load_file("logo.yml")
+    begin
+      params = YAML.load_file("config/logo.yml")
 
-    config.after_initialize do
-      params.each do |key,value|
-        puts '#'*100
-        puts value
+      config.after_initialize do
+        params.each do |key,value|
+          puts '#'*100
+          puts value
+        end
       end
-      #print params['params']['team_name']
+    rescue
+      puts 'creating...'
     end
+
   end
 
 
