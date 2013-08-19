@@ -7,8 +7,9 @@ module RailsTeamLogo
 
     params = YAML.load_file("logo.yml")
     config.after_initialize do
-      params.each do |f|
-        puts f
+      params.each do |key, value|
+        puts '#'*100
+        puts key.value
       end
       #print params['params']['team_name']
     end
