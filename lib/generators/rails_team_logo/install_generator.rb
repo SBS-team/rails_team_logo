@@ -9,7 +9,7 @@ module RailsTeamLogo
       desc "Creates a Devise initializer and copy locale files to your application."
 
       def copy_locale
-        copy_file "../../../lib/generators/logo.yml", "config/logo.yml"
+        copy_file "../../../lib/generators/rails_team_logo/templates/logo.yml", "config/logo.yml"
       end
 
     end
