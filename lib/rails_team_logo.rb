@@ -5,8 +5,6 @@ module RailsTeamLogo
 
   class MyRailtie < Rails::Railtie
 
-    #Dir.chdir('config')
-    #if File.exist?('logo.yml')
     begin
       params = YAML.load_file("config/logo.yml")
 
@@ -17,11 +15,9 @@ module RailsTeamLogo
         end
       end
     rescue
-      puts 'Error'
+      puts 'creating...'
     end
-    #else
-    #
-    #end
+
   end
 
 
