@@ -10,7 +10,7 @@ module RailsTeamLogo
       params.each do |key, value|
         puts '#'*100
         puts params.inspect
-        puts key.inspect
+        puts value.inspect
       end
       #print params['params']['team_name']
     end
