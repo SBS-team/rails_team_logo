@@ -9,7 +9,7 @@ module RailsTeamLogo
     config.after_initialize do
       params.each do |key, value|
         puts '#'*100
-        puts key.value
+        puts key.inspect
       end
       #print params['params']['team_name']
     end
