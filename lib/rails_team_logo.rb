@@ -4,10 +4,10 @@ require "yaml"
 module RailsTeamLogo
 
   class MyRailtie < Rails::Railtie
-    params = YAML.load_file('logo.yml')
+    params = YAML.load_file("#{RAILS.root}logo.yml")
     config.after_initialize do
       puts '='*200
-      puts params[:params][:team_name]
+      puts params['params']['team_name']
       ############
       ############
       ############
