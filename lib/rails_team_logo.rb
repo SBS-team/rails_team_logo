@@ -9,10 +9,6 @@ module RailsTeamLogo
       puts '='*100
       puts params['params']['team_name']
       puts '='*100
-      ############
-      ############
-      ############
-
     end
   end
 
