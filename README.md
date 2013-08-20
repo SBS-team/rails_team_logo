@@ -24,19 +24,19 @@ Then you need run:
  This is a file there will be stored your team name, our else text which you wanna to out
  on server start or console start. He must be in Hash structure like:
 
-$  key1: 'value'
-$  key2: 'value'
+    $  key1: 'value'
+    $  key2: 'value'
 
  Examples:
  If i want to write just line string use this:
-$  team_name: "Exaple-team"
+    $  team_name: "Exaple-team"
 
  Also, you can write it like "space" string:
 
-$ key1: 'line1 /n
-$        line2 /n
-$        line3 /n
-$        line4 /n'
+    $ key1: 'line1 /n
+    $        line2 /n
+    $        line3 /n
+    $        line4 /n'
 
  Notice: If you want to use "/" be careful
 
@@ -44,12 +44,12 @@ $        line4 /n'
  Also, you can add as many values as you want.
  They will be withdrawn in order as you wrote them here
 
-$ line1:  'Hello' => Should be first
-$ line2:  'World' => Should be second
+    $ line1:  'Hello' => Should be first
+    $ line2:  'World' => Should be second
 
  In console we got:
-$ "Hello"
-$ "World"
+    $ "Hello"
+    $ "World"
 
 
 # Simple example of use:
