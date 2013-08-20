@@ -3,7 +3,7 @@ module RailsTeamLogo
   class MyRailtie < Rails::Railtie
 
     begin
-      require './config/initializers/logo.rb'
+      include './config/initializers/logo.rb'
       config.after_initialize do
 
         Params.each do |key,value|
