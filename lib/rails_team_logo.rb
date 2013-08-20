@@ -30,7 +30,7 @@
 #
 #require 'logo.rb'
 #"/home/user9/work/gemtest"
-require 'config/initializers/logo'
+#require 'config/initializers/logo'
 module RailsTeamLogo
 
 
@@ -38,8 +38,9 @@ module RailsTeamLogo
   class MyRailtie < Rails::Railtie
     #@params = Hash.new()
     begin
-      #require 'config/initializers/logo'
+      #require 'config/initializers/logo.rb'
       #params = YAML.load_file("config/logo.rb")
+      load_file("config/initializers/logo.rb")
 
       config.after_initialize do
         #p Dir.pwd
