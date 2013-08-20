@@ -12,6 +12,7 @@ module RailsTeamLogo
         params.each do |key,value|
           puts '#'*100
           puts value
+          puts '#'*100
         end
       end
     rescue
