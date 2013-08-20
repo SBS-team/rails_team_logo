@@ -42,8 +42,8 @@ module RailsTeamLogo
 
       config.after_initialize do
         #p Dir.pwd
-        load "config/initializers/logo.rb"
-
+        #load "config/initializers/logo.rb"
+        Params = {:a => '12', :b => '13'}
         p Params.inspect
         Params.each do |key,value|
           puts '#'*100
