@@ -15,7 +15,7 @@ module RailsTeamLogo
         end
       end
     rescue
-      puts ''
+      #print ''
     end
 
   end
