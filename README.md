@@ -20,7 +20,7 @@ Then you need run:
 
     $ rails generate rails_team_logo:install
 
-$$ Usage
+## Usage
  This is a file there will be stored your team name, our else text which you wanna to out
  on server start or console start. He must be in Hash structure like:
 
