@@ -1,15 +1,16 @@
 require "rails_team_logo/version"
-require "yaml"
 
 module RailsTeamLogo
+
+  Params = Hash.new()
 
   class MyRailtie < Rails::Railtie
 
     begin
-      params = YAML.load_file("config/logo.yml")
+      #params = YAML.load_file("config/logo.rb")
 
       config.after_initialize do
-        params.each do |key,value|
+        Params.each do |key,value|
           puts '#'*100
           puts value
           puts '#'*100

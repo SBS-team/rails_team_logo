@@ -1,3 +1,5 @@
+#require 'rails_team_logo'
+
 # This is a file there will be stored your team name, our else text which you wanna to out
 # on server start or console start. He must be in Hash structure like:
 #
@@ -30,6 +32,7 @@
 
 
 # Simple example of use:
+Params = {
 team_name: "  ____________      _________    ____________   \n
             |-----____---1   |-- ___ --|  |-----____---1    \n
             |----1----1---1  |--|---|--|  |----1----1---1   \n
@@ -41,4 +44,4 @@ team_name: "  ____________      _________    ____________   \n
             |------|-----1   |--|___|--|  |------|-----1    \n
             |______|______1  |_________|  |______|______1   \n"
 
-
+      }
