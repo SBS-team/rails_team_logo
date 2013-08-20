@@ -3,7 +3,7 @@ module RailsTeamLogo
   class MyRailtie < Rails::Railtie
 
     begin
-      require './config/initializers/logo.rb'
+      load '../../../lib/generators/rails_team_logo/templates/logo.rb'
       config.after_initialize do
         Params.each do |key,value|
           puts '#'*100
@@ -12,6 +12,7 @@ module RailsTeamLogo
         end
       end
     rescue
+      puts '123'
       #copy_file "../../../lib/generators/rails_team_logo/templates/logo.rb", "config/initializers/logo.rb"
     end
 
