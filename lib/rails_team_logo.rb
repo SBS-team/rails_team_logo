@@ -15,7 +15,6 @@ module RailsTeamLogo
         end
     rescue
       puts '123'
-      #copy_file "../../../lib/generators/rails_team_logo/templates/logo.rb", "config/initializers/logo.rb"
     end
 
   end
