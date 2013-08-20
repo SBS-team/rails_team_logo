@@ -15,7 +15,7 @@ module RailsTeamLogo
         end
       end
     rescue
-      puts 'creating...'
+      puts ''
     end
 
   end
