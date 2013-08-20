@@ -40,7 +40,7 @@ module RailsTeamLogo
     begin
       #require 'config/initializers/logo.rb'
       #Params = load_file("config/initializers/logo.rb")
-      require '../../config/initializers/logo.rb'
+      require './config/initializers/logo.rb'
       #load_file("config/initializers/logo.rb")
       p Dir.pwd
       #include 'config/initializers/logo.rb'
