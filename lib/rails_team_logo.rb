@@ -37,7 +37,7 @@ module RailsTeamLogo
   class MyRailtie < Rails::Railtie
     #@params = Hash.new()
     begin
-      require "config/initializers/logo.rb"
+      #require "config/initializers/logo.rb"
       #params = YAML.load_file("config/logo.rb")
 
       config.after_initialize do
