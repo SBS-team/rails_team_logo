@@ -41,10 +41,11 @@ module RailsTeamLogo
       #require 'config/initializers/logo.rb'
       #params = YAML.load_file("config/logo.rb")
       #load_file("config/initializers/logo.rb")
-      include '/config/initializers/logo.rb'
+      p Dir.pwd
+      include 'config/initializers/logo.rb'
 
       config.after_initialize do
-        #p Dir.pwd
+
         #require 'config/initializers/logo.rb'
 
         p Params.inspect
