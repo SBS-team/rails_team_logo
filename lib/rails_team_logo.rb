@@ -54,7 +54,7 @@ module RailsTeamLogo
         end
       end
     rescue
-
+      p 'rescue come on'
     end
 
   end
