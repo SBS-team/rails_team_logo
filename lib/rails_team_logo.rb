@@ -4,6 +4,7 @@ module RailsTeamLogo
 
     begin
       #require './config/initializers/logo.rb'
+      Params = {:a => '1', :b => '2'}
       config.after_initialize do
         Params.each do |key,value|
           puts '#'*100
