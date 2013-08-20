@@ -15,7 +15,7 @@ module RailsTeamLogo
         end
       end
     rescue
-      #print ''
+
     end
 
   end
