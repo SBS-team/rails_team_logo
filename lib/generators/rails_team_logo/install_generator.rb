@@ -5,7 +5,7 @@ module RailsTeamLogo
       source_root File.expand_path("../../templates", __FILE__)
 
       def copy_locale
-        copy_file "../../../lib/generators/rails_team_logo/templates/logo.rb", "config/logo.rb"
+        copy_file "../../../lib/generators/rails_team_logo/templates/logo.rb", "config/initializers/logo.rb"
       end
 
     end
