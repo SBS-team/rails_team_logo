@@ -8,7 +8,7 @@ module RailsTeamLogo
 
         Params.each do |key,value|
           puts '#'*100
-          print value
+          puts value
           puts '#'*100
         end
       end
