@@ -1,10 +1,9 @@
 module RailsTeamLogo
 
-  require './config/initializers/logo.rb'
   class MyRailtie < Rails::Railtie
 
     begin
-
+      require './config/initializers/logo.rb'
       config.after_initialize do
         Params.each do |key,value|
           puts '#'*100
