@@ -7,7 +7,7 @@ module RailsTeamLogo
           if File.exists?("#{Rails.root}/config/initializers/logo.rb")
             require './config/initializers/logo.rb'
           else
-            require '../../../lib/generators/rails_team_logo/templates/logo.rb'
+            require 'logo.rb'
           end
 
           Params.each do |key,value|
