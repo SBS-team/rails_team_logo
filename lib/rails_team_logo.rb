@@ -6,12 +6,16 @@ module RailsTeamLogo
         config.after_initialize do
           if File.exists?("#{Rails.root}/config/initializers/logo.rb")
             require './config/initializers/logo.rb'
-            Params.each do |key,value|
-              puts '#'*100
-              puts value
-              puts '#'*100
-            end
+          else
+            require 'logo.rb'
           end
+
+          Params.each do |key,value|
+            puts '#'*100
+            puts value
+            puts '#'*100
+          end
+
         end
     rescue
 
