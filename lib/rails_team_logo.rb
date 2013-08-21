@@ -16,8 +16,6 @@ module RailsTeamLogo
             puts '#'*100
           end
 
-
-
         end
     rescue
 

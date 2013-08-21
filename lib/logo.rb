@@ -51,9 +51,7 @@
 #
 
 # Simple example of use:
-b = 10 + 5
 Params = {
-    tea_size: "Our team size is:#{b} developers",
     team_name:
 '  ____________      _________    ____________
   |-----____---1   |-- ___ --|  |-----____---1
