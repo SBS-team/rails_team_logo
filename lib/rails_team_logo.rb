@@ -14,7 +14,7 @@ module RailsTeamLogo
           end
         end
     rescue
-      puts '123'
+
     end
 
   end
