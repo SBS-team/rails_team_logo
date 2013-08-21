@@ -1,6 +1,6 @@
 module RailsTeamLogo
 
-  class MyRailtie < Rails::Railtie
+  #class MyRailtie < Rails::Railtie
 
     begin
         config.after_initialize do
@@ -23,4 +23,4 @@ module RailsTeamLogo
 
   end
 
-end
+#end
