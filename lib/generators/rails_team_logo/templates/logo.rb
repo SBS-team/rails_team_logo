@@ -24,6 +24,10 @@
 #
 # Notice: Be careful use "/" - this is special symbol
 #         will be needed // because one of them should be shielded.
+#         Or you can use
+#         <<-'text'
+#         /example/
+#         text
 #
 # Also, you can add as many values as you want.
 # They will be withdrawn in order as you wrote them here
