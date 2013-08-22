@@ -2,46 +2,24 @@ require '../spec_helper'
 
 describe RailsTeamLogo do
 
-  #before do
-  #  if File.exists?("#{Rails.root}/config/initializers/logo.rb")
-  #    require './config/initializers/logo.rb'
-  #  else
-  #    require 'logo.rb'
-  #  end
-  #end
-
-  describe 'require' do
+  before do
     require 'logo.rb'
-    assert_instance_of( Hash, Params )# 	Обеспечивает, что obj типа class.
-    #should Params
   end
 
-  describe 'not require' do
-    should require 'logo.rb'
+  describe 'check constant' do
+    it { Params.should be_instance_of(Hash) }
+    it { Params.should_not be_nil }
+    it { Params.should include(:team_name) }
+    it { Params.should have_at_least(1).items }
+  end
+
+  describe 'should print' do
+    require 'logo.rb'
+    Params.each do |key, value|
+      var = value
+      puts var
+      it { var.should eq(value) }
+    end
   end
 
 end
-#output.should_receive(:puts).with('Welcome to Codebreaker!')
-
-#class MyRailtie < Rails::Railtie
-#
-#  begin
-#    config.after_initialize do
-#      if File.exists?("#{Rails.root}/config/initializers/logo.rb")
-#        require './config/initializers/logo.rb'
-#      else
-#        require 'logo.rb'
-#      end
-#
-#      Params.each do |key,value|
-#        puts '#'*100
-#        puts value
-#        puts '#'*100
-#      end
-#
-#    end
-#  rescue
-#
-#  end
-#
-#end
