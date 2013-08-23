@@ -68,13 +68,13 @@ Then you need run:
      $  "World"
 
  Also, you can use rails variables here. Or whatever you want.
- Before you define IMPORTANT constant `Params` you can any rails operations as you wish.
+ Before you define IMPORTANT constant `Params` you can run any rails operations as you wish.
  For example:
 
      $  user_count = User.count
      $  Params = {
      $   title: "Welcome to my server!"
-     $   user: "Here is #{user_count} users on your site"
+     $   user: "Here is #{user_count} users on my site"
      $ }
 
  VERY IMPORTANT: YOU CAN USE ONLY CONSTANT WITH NAME `Params`
@@ -82,19 +82,19 @@ Then you need run:
 
  Simple example of use:
 
-     $Params = {
-     $    team_name:
-     $'  ____________      _________    ____________
-     $  |-----____---1   |-- ___ --|  |-----____---1
-     $  |----1----1---1  |--|---|--|  |----1----1---1
-     $  |---|------|---| |--|---|--|  |---|------|---|
-     $  |----1____1---|  |--|---|--|  |----1____1---|
-     $  |------------1   |--|---|--|  |------------1
-     $  |-----------1    |--|---|--|  |-----------1
-     $  |------|----1    |--|---|--|  |------|----1
-     $  |------|-----1   |--|___|--|  |------|-----1
-     $  |______|______1  |_________|  |______|______1'
-     $}
+     $  Params = {
+     $     team_name:
+     $  '  ____________      _________    ____________
+     $    |-----____---1   |-- ___ --|  |-----____---1
+     $    |----1----1---1  |--|---|--|  |----1----1---1
+     $    |---|------|---| |--|---|--|  |---|------|---|
+     $    |----1____1---|  |--|---|--|  |----1____1---|
+     $    |------------1   |--|---|--|  |------------1
+     $    |-----------1    |--|---|--|  |-----------1
+     $    |------|----1    |--|---|--|  |------|----1
+     $    |------|-----1   |--|___|--|  |------|-----1
+     $    |______|______1  |_________|  |______|______1'
+     $  }
 
 
 
