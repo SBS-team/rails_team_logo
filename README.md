@@ -76,7 +76,7 @@ Then you need run:
      $   user: "Here is #{user_count} users on your site"
      $ }
 
- VERY IMPORTANT: YOU CAN USE ONLY CONSTANT WITH NAME (`"Params"`)
+ VERY IMPORTANT: YOU CAN USE ONLY CONSTANT WITH NAME `"Params"`
 
 
  Simple example of use:
