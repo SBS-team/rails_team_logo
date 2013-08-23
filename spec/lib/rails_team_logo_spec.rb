@@ -1,5 +1,3 @@
-require '../spec_helper'
-
 describe RailsTeamLogo do
 
   before do
