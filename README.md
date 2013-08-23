@@ -63,8 +63,8 @@ Then you need run:
      $  }
 
  In console we got:
-     $  "Hello"
-     $  "World"
+     "Hello" /n
+     "World" /n
 
  Also, you can use rails variables here. Or whatever you want.
  Before you define IMPORTANT constant "Params" you can any rails operations as you wish.
