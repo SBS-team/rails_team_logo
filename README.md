@@ -68,7 +68,7 @@ Then you need run:
      $  "World"
 
  Also, you can use rails variables here. Or whatever you want.
- Before you define IMPORTANT constant "Params" you can any rails operations as you wish.
+ Before you define IMPORTANT constant `Params` you can any rails operations as you wish.
  For example:
 
      $  user_count = User.count
@@ -77,7 +77,7 @@ Then you need run:
      $   user: "Here is #{user_count} users on your site"
      $ }
 
- VERY IMPORTANT: YOU CAN USE ONLY CONSTANT WITH NAME `"Params"`
+ VERY IMPORTANT: YOU CAN USE ONLY CONSTANT WITH NAME `Params`
 
 
  Simple example of use:
