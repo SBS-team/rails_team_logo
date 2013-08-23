@@ -43,12 +43,16 @@ Then you need run:
      $  Params = {
      $   key1: 'line1
      $          line2
-     $         line3
+     $          line3
      $          line4 '
      $  }
 
  Notice: Be careful use "/" - this is special symbol
           will be needed // because one of them should be shielded.
+          Or you can use:
+       `<<-'text'
+       /example/
+       text`
 
  Also, you can add as many values as you want.
  They will be withdrawn in order as you wrote them here
@@ -59,37 +63,38 @@ Then you need run:
      $  }
 
  In console we got:
- "Hello"
- "World"
+
+     $  "Hello"
+     $  "World"
 
  Also, you can use rails variables here. Or whatever you want.
- Before you define IMPORTANT constant "Params" you can any rails operations as you wish.
+ Before you define IMPORTANT constant `Params` you can run any rails operations as you wish.
  For example:
 
      $  user_count = User.count
      $  Params = {
      $   title: "Welcome to my server!"
-     $   user: "Here is #{user_count} users on your site"
+     $   user: "Here is #{user_count} users on my site"
      $ }
 
- VERY IMPORTANT: YOU CAN USE ONLY CONSTANT WITH NAME (`"Params"`)
+ VERY IMPORTANT: YOU CAN USE ONLY CONSTANT WITH NAME `Params`
 
 
  Simple example of use:
 
-     $Params = {
-     $    team_name:
-     $'  ____________      _________    ____________
-     $  |-----____---1   |-- ___ --|  |-----____---1
-     $  |----1----1---1  |--|---|--|  |----1----1---1
-     $  |---|------|---| |--|---|--|  |---|------|---|
-     $  |----1____1---|  |--|---|--|  |----1____1---|
-     $  |------------1   |--|---|--|  |------------1
-     $  |-----------1    |--|---|--|  |-----------1
-     $  |------|----1    |--|---|--|  |------|----1
-     $  |------|-----1   |--|___|--|  |------|-----1
-     $  |______|______1  |_________|  |______|______1'
-     $}
+     $  Params = {
+     $     team_name:
+     $  '  ____________      _________    ____________
+     $    |-----____---1   |-- ___ --|  |-----____---1
+     $    |----1----1---1  |--|---|--|  |----1----1---1
+     $    |---|------|---| |--|---|--|  |---|------|---|
+     $    |----1____1---|  |--|---|--|  |----1____1---|
+     $    |------------1   |--|---|--|  |------------1
+     $    |-----------1    |--|---|--|  |-----------1
+     $    |------|----1    |--|---|--|  |------|----1
+     $    |------|-----1   |--|___|--|  |------|-----1
+     $    |______|______1  |_________|  |______|______1'
+     $  }
 
 
 
